@@ -15,4 +15,5 @@ sudo chmod 644 sqljdbc4.jar
 #restart cluster
 
 scala> val resultsDF = csc.load("jdbc", Map( "driver" -> "com.microsoft.sqlserver.jdbc.SQLServerDriver", "url" -> "jdbc:sqlserver://xxx.xxx.xxx.xxx:1433;database=xxxxx;user=xxxxx;password=xxxxx;trustServerCertificate=false;loginTimeout=30;", "dbtable" -> "xxx"))
+
 scala> println(resultsDF.count())
