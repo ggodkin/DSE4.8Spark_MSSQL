@@ -4,8 +4,11 @@
 #Get sqljdbc4.jar from MSDN
 
 cd /usr/share/dse/resources/spark/lib/
+
 sudo cp  ~/Downloads/sqljdbc_4.2/enu/sqljdbc4.jar .
+
 sudo chown cassandra:cassandra sqljdbc4.jar 
+
 sudo chmod 644 sqljdbc4.jar
 
 
